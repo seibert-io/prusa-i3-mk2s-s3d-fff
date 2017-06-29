@@ -1,2 +1,2 @@
-# prusa-i3-mk2s-s3d-fff
+# Prusa i3 MK2/MK2S Simplify3d FFF Profile
 Simplify3D FFF Profile for Prusa i3 MK2S (based on Joseph Prusa's Slic3r profile)
