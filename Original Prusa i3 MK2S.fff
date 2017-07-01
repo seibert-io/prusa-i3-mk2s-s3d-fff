@@ -4,7 +4,7 @@
   <printMaterial>PLA</printMaterial>
   <printQuality>DETAIL 0.1mm</printQuality>
   <printExtruders></printExtruders>
-  <extruder name="Primary Extruder">
+  <extruder name="Extruder 1">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
     <autoWidth>0</autoWidth>
@@ -46,7 +46,7 @@
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
   <skirtOutlines>1</skirtOutlines>
-  <skirtOffset>1.8</skirtOffset>
+  <skirtOffset>2</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
@@ -83,7 +83,7 @@
   <supportGridSpacing>4</supportGridSpacing>
   <maxOverhangAngle>45</maxOverhangAngle>
   <supportAngles>0</supportAngles>
-  <temperatureController name="Primary Extruder">
+  <temperatureController name="Extruder 1">
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <relayBetweenLayers>0</relayBetweenLayers>
@@ -191,7 +191,7 @@
 
 
   <autoConfigureMaterial name="Prusa PLA">
-    <temperatureController name="Primary Extruder">
+    <temperatureController name="Extruder 1">
       <setpoint layer="1" temperature="210"/>
     </temperatureController>
     <globalBedTemperature>50</globalBedTemperature>
@@ -204,7 +204,7 @@
 
 
   <autoConfigureMaterial name="Prusa ABS">
-    <temperatureController name="Primary Extruder">
+    <temperatureController name="Extruder 1">
       <setpoint layer="1" temperature="255"/>
     </temperatureController>
     <globalBedTemperature>100</globalBedTemperature>
@@ -216,7 +216,7 @@
 
 
   <autoConfigureMaterial name="Prusa PET">
-    <temperatureController name="Primary Extruder">
+    <temperatureController name="Extruder 1">
       <setpoint layer="1" temperature="240"/>
     </temperatureController>
     <globalBedTemperature>90</globalBedTemperature>
@@ -230,7 +230,7 @@
 
 
   <autoConfigureMaterial name="ColorFabb XT-CF20">
-    <temperatureController name="Primary Extruder">
+    <temperatureController name="Extruder 1">
       <setpoint layer="1" temperature="240"/>
       <setpoint layer="2" temperature="250"/>
     </temperatureController>
@@ -250,7 +250,7 @@
 
 
   <autoConfigureMaterial name="NinjaFlex">
-    <temperatureController name="Primary Extruder">
+    <temperatureController name="Extruder 1">
       <useRetract>0</useRetract>
       <setpoint layer="1" temperature="230"/>
     </temperatureController>
@@ -294,7 +294,7 @@
       <bridgingExtrusionMultiplier>0.7</bridgingExtrusionMultiplier>
       <rapidXYspeed>10080</rapidXYspeed>
       <rapidZspeed>1002</rapidZspeed>
-      <extruder name="Primary Extruder">
+      <extruder name="Extruder 1">
         <width>0.45</width>
       </extruder>
     </autoConfigureQuality>
@@ -302,7 +302,7 @@
     <autoConfigureQuality name="0.10mm DETAIL">
       <layerHeight>0.1</layerHeight>
       <infillPercentage>15</infillPercentage>
-      <internalInfillPattern>Fast Honeycomb</internalInfillPattern>
+      <internalInfillPattern>Rectilinear</internalInfillPattern>
       <externalInfillPattern>Rectilinear</externalInfillPattern>
       <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
       <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
@@ -318,7 +318,7 @@
       <bridgingExtrusionMultiplier>0.7</bridgingExtrusionMultiplier>
       <rapidXYspeed>6000</rapidXYspeed>
       <rapidZspeed>1002</rapidZspeed>
-      <extruder name="Primary Extruder">
+      <extruder name="Extruder 1">
         <width>0.45</width>
       </extruder>
     </autoConfigureQuality>
@@ -342,7 +342,7 @@
       <bridgingExtrusionMultiplier>0.8</bridgingExtrusionMultiplier>
       <rapidXYspeed>6000</rapidXYspeed>
       <rapidZspeed>1002</rapidZspeed>
-      <extruder name="Primary Extruder">
+      <extruder name="Extruder 1">
         <width>0.45</width>
       </extruder>
     </autoConfigureQuality>
@@ -366,7 +366,7 @@
     <bridgingExtrusionMultiplier>0.65</bridgingExtrusionMultiplier>
     <rapidXYspeed>6000</rapidXYspeed>
     <rapidZspeed>1002</rapidZspeed>
-    <extruder name="Primary Extruder">
+    <extruder name="Extruder 1">
       <width>0.45</width>
     </extruder>
   </autoConfigureQuality>
@@ -390,7 +390,7 @@
     <bridgingExtrusionMultiplier>1.0</bridgingExtrusionMultiplier>
     <rapidXYspeed>6000</rapidXYspeed>
     <rapidZspeed>1002</rapidZspeed>
-    <extruder name="Primary Extruder">
+    <extruder name="Extruder 1">
       <width>0.45</width>
     </extruder>
     <generateSupport>0</generateSupport>
@@ -415,7 +415,7 @@
     <bridgingExtrusionMultiplier>0.65</bridgingExtrusionMultiplier>
     <rapidXYspeed>6000</rapidXYspeed>
     <rapidZspeed>1002</rapidZspeed>
-    <extruder name="Primary Extruder">
+    <extruder name="Extruder 1">
       <width>0.65</width>
     </extruder>
   </autoConfigureQuality>
@@ -440,7 +440,7 @@
       <bridgingExtrusionMultiplier>0.95</bridgingExtrusionMultiplier>
       <rapidXYspeed>6000</rapidXYspeed>
       <rapidZspeed>1002</rapidZspeed>
-      <extruder name="Primary Extruder">
+      <extruder name="Extruder 1">
         <width>0.45</width>
       </extruder>
     </autoConfigureQuality>
