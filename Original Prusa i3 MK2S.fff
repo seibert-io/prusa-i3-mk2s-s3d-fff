@@ -370,9 +370,9 @@
     <externalInfillPattern>Rectilinear</externalInfillPattern>
     <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-    <topSolidLayers>3</topSolidLayers>
-    <bottomSolidLayers>3</bottomSolidLayers>
-    <perimeterOutlines>2</perimeterOutlines>
+    <topSolidLayers>5</topSolidLayers>
+    <bottomSolidLayers>5</bottomSolidLayers>
+    <perimeterOutlines>3</perimeterOutlines>
     <defaultSpeed>900</defaultSpeed>
     <firstLayerUnderspeed>1.0</firstLayerUnderspeed>
     <outlineUnderspeed>1.0</outlineUnderspeed>
