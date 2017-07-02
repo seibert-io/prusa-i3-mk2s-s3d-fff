@@ -256,14 +256,6 @@
     </temperatureController>
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
 
-    <defaultSpeed>900</defaultSpeed>
-    <firstLayerUnderspeed>1.0</firstLayerUnderspeed>
-    <outlineUnderspeed>1.0</outlineUnderspeed>
-    <solidInfillUnderspeed>1.0</solidInfillUnderspeed>
-    <supportUnderspeed>1.0</supportUnderspeed>
-    <bridgingSpeedMultiplier>1.0</bridgingSpeedMultiplier>
-    <bridgingExtrusionMultiplier>1.0</bridgingExtrusionMultiplier>
-
     <temperatureController name="Heated Bed">
       <setpoint layer="1" temperature="40"/>
     </temperatureController>
@@ -394,6 +386,7 @@
       <width>0.45</width>
     </extruder>
     <generateSupport>0</generateSupport>
+    <retractBetweenLayers>1</retractBetweenLayers>
   </autoConfigureQuality>
 
   <autoConfigureQuality name="0.25mm DRAFT">
