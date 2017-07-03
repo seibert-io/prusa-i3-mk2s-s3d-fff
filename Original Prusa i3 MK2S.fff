@@ -287,6 +287,7 @@
       <rapidXYspeed>10080</rapidXYspeed>
       <rapidZspeed>1002</rapidZspeed>
       <extruder name="Extruder 1">
+        <useRetract>1</useRetract>
         <width>0.45</width>
       </extruder>
     </autoConfigureQuality>
@@ -311,6 +312,7 @@
       <rapidXYspeed>6000</rapidXYspeed>
       <rapidZspeed>1002</rapidZspeed>
       <extruder name="Extruder 1">
+        <useRetract>1</useRetract>
         <width>0.45</width>
       </extruder>
     </autoConfigureQuality>
@@ -335,6 +337,7 @@
       <rapidXYspeed>6000</rapidXYspeed>
       <rapidZspeed>1002</rapidZspeed>
       <extruder name="Extruder 1">
+        <useRetract>1</useRetract>
         <width>0.45</width>
       </extruder>
     </autoConfigureQuality>
@@ -359,6 +362,7 @@
     <rapidXYspeed>6000</rapidXYspeed>
     <rapidZspeed>1002</rapidZspeed>
     <extruder name="Extruder 1">
+      <useRetract>1</useRetract>
       <width>0.45</width>
     </extruder>
   </autoConfigureQuality>
@@ -376,17 +380,18 @@
     <defaultSpeed>900</defaultSpeed>
     <firstLayerUnderspeed>0.7</firstLayerUnderspeed>
     <outlineUnderspeed>1.0</outlineUnderspeed>
-    <solidInfillUnderspeed>1.0</solidInfillUnderspeed>
+    <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
     <supportUnderspeed>1.0</supportUnderspeed>
     <bridgingSpeedMultiplier>1.0</bridgingSpeedMultiplier>
     <bridgingExtrusionMultiplier>1.0</bridgingExtrusionMultiplier>
     <rapidXYspeed>7200</rapidXYspeed>
     <rapidZspeed>1002</rapidZspeed>
     <extruder name="Extruder 1">
+      <useRetract>0</useRetract>
       <width>0.45</width>
     </extruder>
     <generateSupport>0</generateSupport>
-    <retractBetweenLayers>1</retractBetweenLayers>
+    <retractBetweenLayers>0</retractBetweenLayers>
   </autoConfigureQuality>
 
   <autoConfigureQuality name="0.25mm DRAFT">
@@ -409,6 +414,7 @@
     <rapidXYspeed>6000</rapidXYspeed>
     <rapidZspeed>1002</rapidZspeed>
     <extruder name="Extruder 1">
+      <useRetract>1</useRetract>
       <width>0.65</width>
     </extruder>
   </autoConfigureQuality>
@@ -434,6 +440,7 @@
       <rapidXYspeed>6000</rapidXYspeed>
       <rapidZspeed>1002</rapidZspeed>
       <extruder name="Extruder 1">
+        <useRetract>1</useRetract>
         <width>0.45</width>
       </extruder>
     </autoConfigureQuality>
