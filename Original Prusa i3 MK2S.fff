@@ -148,7 +148,7 @@
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>G4 ; wait,M104 S0 ; turn off temperature,M140 S0 ; turn off heatbed,M107 ; turn off fan,G1 X0 Y200; home X axis,M84 ; disable motors</endingGcode>
+  <endingGcode>G4 ; wait,M104 S0 ; turn off temperature,M140 S0 ; turn off heatbed,M107 ; turn off fan,G91,G1 Z20 ; move extruder up a little,G90,G1 X0 Y200; home X axis,M84 ; disable motors</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
@@ -190,7 +190,7 @@
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
 
 
-  <autoConfigureMaterial name="Prusa PLA">
+  <autoConfigureMaterial name="Prusa PLA (Gluestick?)">
     <temperatureController name="Extruder 1">
       <setpoint layer="1" temperature="210"/>
     </temperatureController>
@@ -203,7 +203,7 @@
   </autoConfigureMaterial>
 
 
-  <autoConfigureMaterial name="Prusa ABS">
+  <autoConfigureMaterial name="Prusa ABS (ABS Juice?)">
     <temperatureController name="Extruder 1">
       <setpoint layer="1" temperature="255"/>
     </temperatureController>
@@ -215,7 +215,7 @@
   </autoConfigureMaterial>
 
 
-  <autoConfigureMaterial name="Prusa PET">
+  <autoConfigureMaterial name="Prusa PET ()">
     <temperatureController name="Extruder 1">
       <setpoint layer="1" temperature="240"/>
     </temperatureController>
@@ -229,7 +229,7 @@
 
 
 
-  <autoConfigureMaterial name="ColorFabb XT-CF20">
+  <autoConfigureMaterial name="ColorFabb XT-CF20 (Gluestick?)">
     <temperatureController name="Extruder 1">
       <setpoint layer="1" temperature="255"/>
     </temperatureController>
@@ -247,7 +247,7 @@
 
 
 
-  <autoConfigureMaterial name="NinjaFlex">
+  <autoConfigureMaterial name="NinjaFlex ()">
     <temperatureController name="Extruder 1">
       <useRetract>0</useRetract>
       <setpoint layer="1" temperature="230"/>
@@ -264,11 +264,11 @@
     </fanSpeed>
   </autoConfigureMaterial>
 
-  <autoConfigureMaterial name="AprintaPro PrintaMent M-ABS">
+  <autoConfigureMaterial name="AprintaPro PrintaMent M-ABS (Gluestick?)">
     <temperatureController name="Extruder 1">
       <setpoint layer="1" temperature="240"/>
     </temperatureController>
-    <globalExtrusionMultiplier>1.2</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>1.12</globalExtrusionMultiplier>
 
     <temperatureController name="Heated Bed">
       <setpoint layer="1" temperature="65"/>
@@ -277,6 +277,68 @@
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="20"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+
+  <autoConfigureMaterial name="AprintaPro PrintaMent M-ABS clear (Gluestick?)">
+    <temperatureController name="Extruder 1">
+      <setpoint layer="1" temperature="250"/>
+    </temperatureController>
+    <globalExtrusionMultiplier>1.18</globalExtrusionMultiplier>
+    <increaseFanForCooling>0</increaseFanForCooling>
+    <temperatureController name="Heated Bed">
+      <setpoint layer="1" temperature="100"/>
+    </temperatureController>
+
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+
+
+  <autoConfigureMaterial name="ColorFabb Glowfill (Gluestick?)">
+    <temperatureController name="Extruder 1">
+      <setpoint layer="1" temperature="215"/>
+    </temperatureController>
+    <globalBedTemperature>55</globalBedTemperature>
+    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="50"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+
+
+  <autoConfigureMaterial name="ColorFabb NGEN (Gluestick?)">
+    <temperatureController name="Extruder 1">
+      <setpoint layer="1" temperature="220"/>
+      <setpoint layer="2" temperature="240"/>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.0</retractionDistance>
+      <retractionSpeed>2700</retractionSpeed>
+      <useCoasting>1</useCoasting>
+      <coastingDistance>0.5</coastingDistance>
+    </temperatureController>
+    <globalBedTemperature>85</globalBedTemperature>
+    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="4" speed="35"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+
+  <autoConfigureMaterial name="Taulman Bridge (Gluestick?)">
+    <temperatureController name="Extruder 1">
+      <setpoint layer="1" temperature="255"/>
+      <useRetract>1</useRetract>
+      <retractionDistance>3.5</retractionDistance>
+      <useCoasting>1</useCoasting>
+      <coastingDistance>0.5</coastingDistance>
+    </temperatureController>
+    <globalBedTemperature>85</globalBedTemperature>
+    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
     </fanSpeed>
   </autoConfigureMaterial>
 
@@ -331,6 +393,33 @@
         <width>0.45</width>
       </extruder>
     </autoConfigureQuality>
+
+
+    <autoConfigureQuality name="0.10mm CLEAR">
+      <layerHeight>0.1</layerHeight>
+      <infillPercentage>100</infillPercentage>
+      <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
+      <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+      <topSolidLayers>3</topSolidLayers>
+      <bottomSolidLayers>3</bottomSolidLayers>
+      <perimeterOutlines>2</perimeterOutlines>
+      <defaultSpeed>1200</defaultSpeed>
+      <firstLayerUnderspeed>1.0</firstLayerUnderspeed>
+      <outlineUnderspeed>1.0</outlineUnderspeed>
+      <solidInfillUnderspeed>1.0</solidInfillUnderspeed>
+      <supportUnderspeed>1.25</supportUnderspeed>
+      <bridgingSpeedMultiplier>0.5</bridgingSpeedMultiplier>
+      <bridgingExtrusionMultiplier>0.65</bridgingExtrusionMultiplier>
+      <increaseFanForCooling>0</increaseFanForCooling>
+      <useDiaphragm>1</useDiaphragm>
+      <diaphragmLayerInterval>1</diaphragmLayerInterval>
+      <rapidXYspeed>6000</rapidXYspeed>
+      <rapidZspeed>1002</rapidZspeed>
+      <extruder name="Extruder 1">
+        <useRetract>0</useRetract>
+      </extruder>
+    </autoConfigureQuality>
+
 
     <autoConfigureQuality name="0.15mm OPTIMAL">
       <layerHeight>0.15</layerHeight>
@@ -435,29 +524,30 @@
   </autoConfigureQuality>
 
 
-    <autoConfigureQuality name="0.35mm FAST">
-      <layerHeight>0.35</layerHeight>
-      <infillPercentage>20</infillPercentage>
-      <internalInfillPattern>Grid</internalInfillPattern>
-      <externalInfillPattern>Rectilinear</externalInfillPattern>
-      <firstLayerHeightPercentage>57</firstLayerHeightPercentage>
-      <firstLayerWidthPercentage>93</firstLayerWidthPercentage>
-      <topSolidLayers>4</topSolidLayers>
-      <bottomSolidLayers>3</bottomSolidLayers>
-      <perimeterOutlines>2</perimeterOutlines>
-      <defaultSpeed>2400</defaultSpeed>
-      <firstLayerUnderspeed>0.7</firstLayerUnderspeed>
-      <outlineUnderspeed>0.7</outlineUnderspeed>
-      <solidInfillUnderspeed>1.5</solidInfillUnderspeed>
-      <supportUnderspeed>1.25</supportUnderspeed>
-      <bridgingSpeedMultiplier>0.5</bridgingSpeedMultiplier>
-      <bridgingExtrusionMultiplier>0.95</bridgingExtrusionMultiplier>
-      <rapidXYspeed>6000</rapidXYspeed>
-      <rapidZspeed>1002</rapidZspeed>
-      <extruder name="Extruder 1">
-        <useRetract>1</useRetract>
-        <width>0.45</width>
-      </extruder>
-    </autoConfigureQuality>
+  <autoConfigureQuality name="0.35mm FAST">
+    <layerHeight>0.35</layerHeight>
+    <infillPercentage>20</infillPercentage>
+    <internalInfillPattern>Grid</internalInfillPattern>
+    <externalInfillPattern>Rectilinear</externalInfillPattern>
+    <firstLayerHeightPercentage>57</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>93</firstLayerWidthPercentage>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <perimeterOutlines>2</perimeterOutlines>
+    <defaultSpeed>2400</defaultSpeed>
+    <firstLayerUnderspeed>0.7</firstLayerUnderspeed>
+    <outlineUnderspeed>0.7</outlineUnderspeed>
+    <solidInfillUnderspeed>1.5</solidInfillUnderspeed>
+    <supportUnderspeed>1.25</supportUnderspeed>
+    <bridgingSpeedMultiplier>0.5</bridgingSpeedMultiplier>
+    <bridgingExtrusionMultiplier>0.95</bridgingExtrusionMultiplier>
+    <rapidXYspeed>6000</rapidXYspeed>
+    <rapidZspeed>1002</rapidZspeed>
+    <extruder name="Extruder 1">
+      <useRetract>1</useRetract>
+      <width>0.45</width>
+    </extruder>
+  </autoConfigureQuality>
+
 
 </profile>
