@@ -323,7 +323,7 @@
   </autoConfigureMaterial>
 
 
-  <autoConfigureMaterial name="ColorFabb Woodfill (Gluestick?, 2.5-3mm lh, 60mm/s+, 5.5mm retract dist.)">
+  <autoConfigureMaterial name="ColorFabb Woodfill (Gluestick?, 0.25mm lh, 40mm/s+, 5.5mm retract dist.)">
     <extruder name="0.4mm Nozzle">
       <useRetract>1</useRetract>
       <retractionDistance>5.5</retractionDistance>
@@ -402,7 +402,7 @@
 
 
 
-  <autoConfigureMaterial name="NinjaFlex (NO glue stick!)">
+  <autoConfigureMaterial name="Ninjatek NinjaFlex (NO glue stick!)">
     <extruder name="0.4mm Nozzle">
       <useRetract>0</useRetract>
       <useCoasting>0</useCoasting>
@@ -416,8 +416,12 @@
       <useCoasting>0</useCoasting>
     </extruder>
 
+    <useSkirt>1</useSkirt>
+    <skirtOutlines>3</skirtOutlines>
+
     <temperatureController name="Extruder 1">
-      <setpoint layer="1" temperature="230"/>
+      <setpoint layer="1" temperature="235"/>
+      <setpoint layer="2" temperature="230"/>
     </temperatureController>
     
     <globalExtrusionMultiplier>1.2</globalExtrusionMultiplier>
@@ -695,7 +699,7 @@
     <retractBetweenLayers>0</retractBetweenLayers>
   </autoConfigureQuality>
 
-  <autoConfigureQuality name="0.20mm NORMAL">
+  <autoConfigureQuality name="0.20mm FAST">
     <layerHeight>0.25</layerHeight>
     <infillPercentage>22</infillPercentage>
     <internalInfillPattern>Fast Honeycomb</internalInfillPattern>
@@ -703,6 +707,27 @@
     <firstLayerHeightPercentage>80</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
     <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <perimeterOutlines>2</perimeterOutlines>
+    <defaultSpeed>4800</defaultSpeed>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <outlineUnderspeed>1.0</outlineUnderspeed>
+    <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
+    <supportUnderspeed>1.25</supportUnderspeed>
+    <bridgingSpeedMultiplier>0.375</bridgingSpeedMultiplier>
+    <bridgingExtrusionMultiplier>0.65</bridgingExtrusionMultiplier>
+    <rapidXYspeed>6000</rapidXYspeed>
+    <rapidZspeed>1002</rapidZspeed>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="0.25mm NORMAL">
+    <layerHeight>0.3</layerHeight>
+    <infillPercentage>22</infillPercentage>
+    <internalInfillPattern>Fast Honeycomb</internalInfillPattern>
+    <externalInfillPattern>Rectilinear</externalInfillPattern>
+    <firstLayerHeightPercentage>80</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <topSolidLayers>5</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <perimeterOutlines>2</perimeterOutlines>
     <defaultSpeed>2400</defaultSpeed>
@@ -749,6 +774,28 @@
     <perimeterOutlines>2</perimeterOutlines>
     <defaultSpeed>2400</defaultSpeed>
     <firstLayerUnderspeed>0.7</firstLayerUnderspeed>
+    <outlineUnderspeed>1.0</outlineUnderspeed>
+    <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
+    <supportUnderspeed>1.25</supportUnderspeed>
+    <bridgingSpeedMultiplier>0.375</bridgingSpeedMultiplier>
+    <bridgingExtrusionMultiplier>0.65</bridgingExtrusionMultiplier>
+    <rapidXYspeed>6000</rapidXYspeed>
+    <rapidZspeed>1002</rapidZspeed>
+  </autoConfigureQuality>
+
+
+  <autoConfigureQuality name="0.30mm FAST">
+    <layerHeight>0.3</layerHeight>
+    <infillPercentage>22</infillPercentage>
+    <internalInfillPattern>Fast Honeycomb</internalInfillPattern>
+    <externalInfillPattern>Rectilinear</externalInfillPattern>
+    <firstLayerHeightPercentage>66</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <topSolidLayers>5</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <perimeterOutlines>2</perimeterOutlines>
+    <defaultSpeed>4800</defaultSpeed>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <outlineUnderspeed>1.0</outlineUnderspeed>
     <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
     <supportUnderspeed>1.25</supportUnderspeed>
